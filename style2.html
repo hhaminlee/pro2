@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>style2</title>
     <style>
+        body{
+            margin: 20px;
+            line-height: 25px;
+        }
         #sidebar{
             background-color: rgb(220, 220, 220);
             border: 1px solid rgb(149, 140, 140);
-            padding-left: 20px;
+            padding-left: 15px;
         }
         #bottom{
             text-align: center;
@@ -20,8 +24,11 @@
             padding: 0;
             position: relative;
         }
+        #main h1{
+            padding-top: 80px;
+        }
         .menuitem{
-            width: 165px;
+            width: 180px;
             float: left;
             background-color: rgb(60, 55, 55);
             color: white;
@@ -40,6 +47,12 @@
         .menuitem:hover{
             background-color: black;
         }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: rgba(0, 142, 0, 0.577);
+        }
     </style>
 </head>
 <body>
@@ -48,14 +61,14 @@
            <h1>Welcom to 이하민's Homepage (22000594)</h1>
            <p>Use the menu to select different Stylesheets</p>
         </div>
-        <div>
+        <div class="wrapper">
             <div id="menu">
                 <ul id="menulist">
-                    <li class="menuitem">Stylesheet 1</li>
+                    <li class="menuitem" onclick="location.href='style1.html'">Stylesheet 1</li>
                     <li class="menuitem">Stylesheet 2</li>
-                    <li class="menuitem">Stylesheet 3</li>
+                    <li class="menuitem" onclick="location.href='style2.html'">Stylesheet 3</li>
                     <li class="menuitem">Stylesheet 4</li>
-                    <li class="menuitem">No Stylesheet</li>
+                    <li class="menuitem" onclick="location.href='nostyle.html'">No Stylesheet</li>
                 </ul>
             </div>
             <div id="main">
@@ -70,7 +83,7 @@
                 <a>Stylesheet 2</a>
                 <a href="style2.html">Stylesheet 3</a>
                 <a>Stylesheet 4</a>
-                <h1>No Styles</h1>
+                <h2>No Styles</h2>
                 <p>
                     This page uses DIV elements to group different sections 
                     of the HTML page. Click here to see how the page looks like
