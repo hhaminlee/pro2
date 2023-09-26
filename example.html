@@ -4,20 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
+    <Style>
+        .form-signin{
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+        form{
+            display: block;
+        }
+        #signbt{
+            background-color: rgb(92, 92, 193);
+            font-size: 20px;
+            color: white;
+            width: 200px;
+            height: 50px;
+            border-style: none;
+            border-radius: 3px;
+        }
+        #signbt:hover{
+            background-color: rgb(50, 50, 157);
+            cursor: pointer;
+        }
+        #email, #password{
+            width: 300px;
+            height: 40px;
+            border-radius: 3px;
+            border: 0.5px solid;
+        }
+        #check{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        body{
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    </Style>
 </head>
-<body>
-    <form>
-        <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt width="72" height="72">
+<body class="text-center">
+    <form class="form-signin">
+        <img class = "img" src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt width="72" height="72">
         <div>
             <h1>Please sign in</h1>
-            <input type="email" placeholder="Email address" required><br>
-            <input type="password" placeholder="password" required>
+            <input type="email" id="email"placeholder="Email address" required><br>
+            <input type="password" id="password"placeholder="password" required>
         </div>
         <div>
-            <input type="checkbox" value="remember-me">
+            <input type="checkbox" id="check" value="remember-me">
             Remember-me
         </div>
-        <button type="submit">Sign in</button>
+        <button id="signbt"type="submit">Sign in</button>
         <p>@ 2017-2022</p>
     </form>
 </body>
